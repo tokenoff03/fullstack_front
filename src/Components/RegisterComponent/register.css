@@ -1,0 +1,49 @@
+.Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(49, 49, 49);
+}
+
+.form {
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+    width: 80%;
+    margin-top: 15px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid silver;
+
+}
+
+.form button {
+    font-weight: 600;
+    cursor: pointer;
+    margin-top:10px;
+    height:40px;
+    background-color: lawngreen;
+    border:none;
+    box-shadow: 0 0 5px 0px lawngreen;
+    text-align: center;
+}
+
+.form__password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.form__password-wrapper span {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    cursor: pointer;
+}

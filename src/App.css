@@ -697,3 +697,49 @@ select::-ms-expand {
     outline: none;
 
 }
+
+.Comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comments_form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comments_form button {
+  align-self: end;
+  margin-right: 15px;
+  font-size: 1.1rem;
+    font-weight: 600;
+    margin-top:10px;
+    height:40px;
+    width: 150px;
+    background-color: lawngreen;
+    border:none;
+    color: white;
+    box-shadow: 0 0 5px 0px lawngreen;
+    text-align: center;
+    cursor: pointer;
+}
+.comments_form textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.comment_block {
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+.succes-text {
+  color: #0dde0d;
+  font-size: 1.2em;
+
+}
+
+.visible {
+  display: none;
+}

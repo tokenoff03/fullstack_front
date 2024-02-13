@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "email": "adilToken@mail.ru",
+      "password": "$2a$10$J4NP1SNVQvzlWQ0ohOPQI./m.Ok8J.2Cg/VmaUXoczjCS4XHbav3C",
+      "name": "Adil",
+      "surname": "Token",
+      "id": 3
+    },
+    {
+      "email": "olzhas123@mail.ru",
+      "password": "$2a$10$pPcC9gc7VHTUyaw253pd4.mj4XZ64zAN/Kk6Tv1jtRst.ya4sM.mS",
+      "name": "Olzhas",
+      "surname": "KnewIT",
+      "id": 4
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1",
+      "roomNumber": 1,
+      "capacity": 5,
+      "description": null,
+      "price": 50,
+      "type": "Single",
+      "urlImg": "https://st.hzcdn.com/simgs/pictures/detskie/zhk-dirizhably-ariana-ahmad-interior-design-img~703190400e949017_14-9666-1-ce09dab.jpg",
+      "booked": false
+    },
+    {
+      "id": "2",
+      "roomNumber": "3",
+      "capacity": "8",
+      "description": "ghddghgd",
+      "price": "100",
+      "type": "Double",
+      "urlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Room_Athens_Hilton.jpg/1200px-Room_Athens_Hilton.jpg",
+      "booked": false
+    },
+    {
+      "id": 3,
+      "roomNumber": "2",
+      "capacity": "15",
+      "description": "asdasdas",
+      "price": "50",
+      "type": "Single",
+      "urlImg": "https://www.seleqtionshotels.com/content/dam/seleqtions/Connaugth/TCPD_PremiumBedroom4_1235.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "booked": false
+    },
+    {
+      "roomNumber": "4",
+      "description": "dsfsdf",
+      "urlImg": "https://www.seleqtionshotels.com/content/dam/seleqtions/Connaugth/TCPD_PremiumBedroom4_1235.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "booked": false,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "roomNumber": "5",
+      "description": "hjohj",
+      "urlImg": "https://www.seleqtionshotels.com/content/dam/seleqtions/Connaugth/TCPD_PremiumBedroom4_1235.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "booked": false
+    },
+    {
+      "id": 6,
+      "roomNumber": "52525",
+      "description": "ghkghkgh",
+      "urlImg": "https://www.seleqtionshotels.com/content/dam/seleqtions/Connaugth/TCPD_PremiumBedroom4_1235.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg",
+      "booked": false
+    }
+  ]
+}

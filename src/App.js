@@ -3,23 +3,28 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
 import Main from './Components/Main';
-import Rooms from './Components/RoomsComponent/Rooms';
+import RoomsContainer from './Components/RoomsComponent/RoomsContainer';
+import RoomDescriptionContainer from './Components/RoomsComponent/RoomDescriptionContainer';
+import CommentsContainer from './Components/CommentsContainer';
+import Login from './Components/LoginComponent/Login';
+import RegisterContainerComponent from './Components/RegisterComponent/RegisterContainerComponent';
 
-import RoomDescription from './Components/RoomsComponent/RoomDescription';
 function App(props) {
   
+
   return (
     <BrowserRouter>
-      <div className="App">
-      <Header/>
-      <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/rooms" element={<Rooms state = {props.state.roomPage} addRoom = {props.addRoom}/>} />
-        <Route path="/room/:id" element={<RoomDescription state = {props.state.roomPage}/>} />
-      </Routes>
-     
-      
-      </div>
+        <div className="App">
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Main/>} />
+          <Route path="/rooms" element={<RoomsContainer/>} />
+          <Route path="/room/:id" element={<RoomDescriptionContainer/>} />
+          <Route path="/comments" element={<CommentsContainer/> }/>
+          <Route path='/register' element={<RegisterContainerComponent/>} />
+          <Route path='/login' element={<Login/>} />
+        </Routes>
+        </div>
     </BrowserRouter>
 
   );

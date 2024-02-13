@@ -1,5 +1,8 @@
+import commentsReducer from "./commentsReducer";
+import roomsReducer from "./roomsReducer";
+
 let store = {
-    state: {
+    _state: {
         roomPage: {
             rooms: [
                 {
@@ -44,13 +47,48 @@ let store = {
                 }
             ]
         },
-
         
+        commentsPage: {
+            comments: [
+                {
+                    id: 1,
+                    message: "Good site",
+                },
+                {
+                    id: 2,
+                    message: "Not bad",
+                },
+                {
+                    id: 3,
+                    message: "Sorry, but i dont realy like it",
+                }
+            ],
+            newCommentText: "",
+        }
+    },
+
+    getState(){
+        return this._state;
+    },
+
+    _callSubscribe() {
+        console.log("state changed");
+    },
+
+    subscribe (observer) {
+        this._callSubscribe = observer; 
+    },
+    
+    dispatch(action){
+        this._state.commentsPage =  commentsReducer(this._state.commentsPage, action)
+        this._state.roomPage =  roomsReducer(this._state.roomPage, action)
+        this._callSubscribe(this._state);
     }
 }
 
-export const addRoom = (room)=>{
-    store.state.roomPage.rooms.push(room);
-}
 
 export default store;
+
+
+
+
